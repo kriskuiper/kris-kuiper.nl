@@ -1,2 +1,2 @@
 # kris-kuiper.nl
-> :computer: My own personal website
+> :computer: My own personal, statically generated website
