@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include("components/meta.html") %}
+  <title>{{ title }}</title>
+</head>
+<body>
+  <div class="container">
+    <h1>{{ title }}</h1>
+
+    {{ content | safe }}
+
+    <footer>
+      Made with 💖 by {{ site.author }}
+    </footer>
+  </div>
+
+  {% include("components/scripts.html") %}
+</body>
+</html>
