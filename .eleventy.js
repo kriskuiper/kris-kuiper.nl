@@ -1,9 +1,6 @@
 module.exports = (config) => {
   config.addLayoutAlias('default', 'layouts/default.html')
 
-  config.addPassthroughCopy('./src/site/scripts')
-  config.addPassthroughCopy('./src/site/styles')
-
   return {
     dir: {
       input: "src/site",
