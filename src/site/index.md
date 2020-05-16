@@ -1,8 +1,8 @@
 ---
-title: "A very basic static site starter"
+title: "Kris Kuiper, Front-end Developer"
 layout: "default"
 ---
 
-You can use this starter to build your own static website.
+Good at building things for the web. Keeping things simple.
 
-[Template setup](/setup)
+You can find met on [Github](https://github.com/kriskuiper) and [LinkedIn](https://www.linkedin.com/in/kris-kuiper-0b6897a2/).

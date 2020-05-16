@@ -1,8 +1,1 @@
-console.log('Works! 🙌')
-
-// Check if serverless functions are working
-fetch('/api/hello')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data.message)
-  })
+console.log('Seriously? This is so simple, you shoulnd\'t even need to inspect it 🤷‍♂️')
