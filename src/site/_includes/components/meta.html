@@ -1,3 +1,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="title" content="Kris Kuiper, Front-end Developer">
+<meta name="description" content="Good at building things for the web, keeping things simple">
+{% for font in fonts %}
+<link rel="preload" href="{{ font.path }}" as="font" type="font/{{ font.type }}" crossorigin>
+{% endfor %}
 <link rel="stylesheet" href="/styles/index.css">
