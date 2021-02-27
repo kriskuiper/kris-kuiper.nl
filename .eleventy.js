@@ -1,4 +1,8 @@
+const minifyHtml = require('./utils/minify-html')
+
 module.exports = (config) => {
+  config.addTransform('htmlmin', minifyHtml)
+  config.addPassthroughCopy({ 'src/assets/fonts': 'fonts' })
   config.addLayoutAlias('default', 'layouts/default.html')
 
   return {
