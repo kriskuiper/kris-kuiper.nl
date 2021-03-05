@@ -36,10 +36,10 @@ body {
   line-height: 1.7;
 }
 
-h1 {
+.title {
   margin-bottom: 64px;
   font-size: 1rem;
-  text-transform: uppercase;
+  text-transform: lowercase;
   line-height: 1.4;
 }
 
@@ -72,4 +72,13 @@ p + p {
     margin-left: 128px;
     margin-right: 128px;
   }
+}
+
+.type-effect::after {
+  content: "_";
+  animation: type-effect 1s steps(2, start) infinite;
+}
+
+@keyframes type-effect {
+  to { visibility: hidden }
 }
