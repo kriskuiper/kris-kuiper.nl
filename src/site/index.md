@@ -3,10 +3,8 @@ title: "Kris Kuiper, Front-end Developer"
 layout: "default"
 ---
 
-Hi, I'm Kris, a front-end developer who's passionate about improving web performance, JAMstack and design systems.
+Hi, I'm Kris, a front-end developer. I'm good at building resilient software for the web and like to build it with a user-centered and pragmatic mindset.
 
-Currently I'm working as a Junior Front-end Developer @ [LOAVIES](https://www.loavies.com/nl/) in The Netherlands.
+Currently I'm working as a front-end developer for [LOAVIES](https://www.loavies.com/nl/) in The Netherlands.
 
-I'm good at building things for the web. Love to keep things simple.
-
-You can find me on [Github](https://github.com/kriskuiper) and [LinkedIn](https://www.linkedin.com/in/kris-kuiper-0b6897a2/).
+Want to know more about me? You can find me on [Github](https://github.com/kriskuiper) and [LinkedIn](https://www.linkedin.com/in/kris-kuiper-0b6897a2/).
