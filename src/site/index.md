@@ -3,7 +3,7 @@ title: "Kris Kuiper, Front-end Developer"
 layout: "default"
 ---
 
-Hi, I'm Kris, a front-end developer. I'm good at building resilient software for the web and like to build it with a user-centered and pragmatic mindset.
+Hi, I'm Kris, a front-end developer. I'm good at building robust software for the web and like to build it with a user-centered and pragmatic mindset.
 
 Currently I'm working as a front-end developer for [LOAVIES](https://www.loavies.com/nl/) in The Netherlands.
 
