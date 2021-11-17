@@ -10,6 +10,8 @@
     "build": "run-s build:*",
     "build:css": "postcss src/assets/css/index.css -o _site/styles/index.css",
     "build:eleventy": "cross-env ELEVENTY_ENV=production eleventy",
+    "watch": "run-p watch:*",
+    "watch:eleventy": "cross-env ELEVENTY_ENV=development eleventy --serve",
     "watch:css": "postcss src/assets/css/index.css -o _site/styles/index.css -w"
   },
   "dependencies": {},

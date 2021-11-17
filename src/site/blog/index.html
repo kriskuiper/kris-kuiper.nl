@@ -1,0 +1,20 @@
+---
+title: "Blog"
+subtitle: "My thoughts about the web"
+layout: "blog"
+---
+
+{% if collections.blog.length > 0 %}
+<ul class="flat-list">
+  {%- for blog in collections.blog -%}
+  <li class="blog-item">
+    <h3>{{ blog.data.title }}</h3>
+    <p>{{ blog.data.excerpt }}</p>
+    <a href="{{ blog.url }}" class="blog-item__link">read more</a>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No blogs yet :(</p>
+<p>Want to know my thoughts about the web? Contact me on <a href="">LinkedIn</a>.</p>
+{% endif %}

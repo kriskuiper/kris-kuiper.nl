@@ -4,6 +4,7 @@ module.exports = (config) => {
   config.addTransform('htmlmin', minifyHtml)
   config.addPassthroughCopy({ 'src/assets/fonts': 'fonts' })
   config.addLayoutAlias('default', 'layouts/default.html')
+  config.addLayoutAlias('blog', 'layouts/blog.html')
 
   return {
     dir: {

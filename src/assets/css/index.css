@@ -82,3 +82,16 @@ p + p {
 @keyframes type-effect {
   to { visibility: hidden }
 }
+
+.blog-layout p + p {
+  margin-top: 16px;
+}
+
+.blog-layout__title {
+  margin-bottom: 0;
+}
+
+.blog-layout__subtitle {
+  font-weight: 600;
+  margin-bottom: 48px;
+}
