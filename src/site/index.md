@@ -5,6 +5,6 @@ layout: "default"
 
 Hi, I'm Kris, a front-end developer. I'm good at building robust software for the web and like to build it with a user-centered and pragmatic mindset.
 
-Currently I'm working as a front-end developer for [Mooore Digital](https://www.mooore.nl/) in The Netherlands, mostly doing things with Magento (Front-end), React and Vue.
+Currently I'm working as a front-end developer for [Mooore Digital](https://www.mooore.nl/) in The Netherlands, mostly doing things with Magento (Hyvä), React and Vue.
 
 Want to know more about me? You can find me on [Github](https://github.com/kriskuiper) and [LinkedIn](https://www.linkedin.com/in/kris-kuiper-0b6897a2/).
