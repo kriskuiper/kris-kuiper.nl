@@ -18,6 +18,6 @@ Currently I'm working as a front-end developer for [Mooore Digital](https://www.
 - React/NextJS
 - Svelte
 - Storybook
-- and many more
+- Typescript
 
 Want to know more about me? You can find me on [Github](https://github.com/kriskuiper) and [LinkedIn](https://www.linkedin.com/in/kris-kuiper-0b6897a2/).
