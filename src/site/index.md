@@ -11,19 +11,10 @@ Currently I'm working as a front-end developer for [Mooore Digital](https://www.
 
 {% image "./src/assets/images/kris.jpg", "lazy", "Foto van mijn gezicht, lachend en voorover geleund kijkend naar de camera," %}
 
-<!-- ## Headless CMS
+## Experience in JavaScript, testing, and many other things
 
-- DatoCMS
-- Contentful
-- Storyblok [check out this project](https://github.com/kriskuiper/cmd-digital-playground)
+I'm experienced in working with JavaScript-based technologies like NuxtJS and NextJS. I also extremely believe in using a [JAMStack](https://jamstack.org/) architectural pattern to build robust websites and applications.
 
-## Front-end tech
-
-- HTML, CSS, JavaScript (obviously)
-- Vue/NuxtJS
-- React/NextJS
-- Svelte
-- Storybook
-- Typescript -->
+To make applications even more robust, I've also used many testing libraries like [Cypress](https://www.cypress.io/), [Jest](https://jestjs.io/), [Vitest](https://vitest.dev/).
 
 Want to know more about me? You can find me on [Github](https://github.com/kriskuiper) and [LinkedIn](https://www.linkedin.com/in/kris-kuiper-0b6897a2/).
