@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const minifyHtml = require("./utils/minify-html");
 const imageShortcode = require("./src/shortcodes/image");
 

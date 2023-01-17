@@ -72,10 +72,10 @@ p + p {
 }
 
 .container {
-  max-width: 780px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem;
+  max-width: 50ch;
 }
 
 .type-effect::after {
