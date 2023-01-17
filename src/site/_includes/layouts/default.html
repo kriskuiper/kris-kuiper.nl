@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  {% include("components/meta.html") %}
-  <title>{{ title }}</title>
-</head>
-<body class="{{ bodyClass or 'body' }}">
-  <div class="container">
-    {% block content %}
-      <h1 class="title type-effect">{{ title }}</h1>
+  <head>
+    {% include("components/meta.html") %}
+    <title>{{ metaTitle }}</title>
+  </head>
+  <body class="{{ bodyClass or 'body' }}">
+    {% include("components/header.html") %}
 
-      <main role="main">
-        {{ content | safe }}
-      </main>
-    {% endblock %}
-  </div>
-</body>
+    <div class="container">
+      {% block content %}
+
+      <h1 class="page-title">
+        {{ title }} {% if highlightedText %}
+        <span class="highlight">{{ highlightedText }}</span>
+        {% endif %}
+      </h1>
+
+      <main role="main">{{ content | safe }}</main>
+      {% endblock %}
+    </div>
+
+    {% include("components/footer.html") %}
+  </body>
 </html>

@@ -1,20 +1,20 @@
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/inter/inter-v3-latin-regular.woff2') format('woff2'),
-       url('/fonts/inter/inter-v3-latin-regular.woff') format('woff'),
-       url('/fonts/inter/inter-v3-latin-regular.ttf') format('truetype');
+  src: url("/fonts/inter/inter-v3-latin-regular.woff2") format("woff2"),
+    url("/fonts/inter/inter-v3-latin-regular.woff") format("woff"),
+    url("/fonts/inter/inter-v3-latin-regular.ttf") format("truetype");
   font-display: fallback;
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url('/fonts/inter/inter-v3-latin-700.woff2') format('woff2'),
-       url('/fonts/inter/inter-v3-latin-700.woff') format('woff'),
-       url('/fonts/inter/inter-v3-latin-700.ttf') format('truetype');
+  src: url("/fonts/inter/inter-v3-latin-700.woff2") format("woff2"),
+    url("/fonts/inter/inter-v3-latin-700.woff") format("woff"),
+    url("/fonts/inter/inter-v3-latin-700.ttf") format("truetype");
   font-display: fallback;
 }
 
@@ -29,18 +29,24 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', Helvetica, sans-serif;
-  font-size: 1.5em;
-  padding: 32px 0;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-size: 1.25rem;
   color: rgb(58, 58, 58);
   line-height: 1.7;
 }
 
-.title {
+@media (min-width: 480px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+
+.header-title {
   margin-bottom: 64px;
   font-size: 1rem;
   text-transform: lowercase;
-  line-height: 1.4;
+  line-height: 1.25;
+  font-weight: 700;
 }
 
 a {
@@ -61,17 +67,15 @@ p + p {
   margin-top: 48px;
 }
 
-.container {
-  max-width: 780px;
-  margin-left: 32px;
-  margin-right: 32px;
+.page-title {
+  line-height: 1.4;
 }
 
-@media (min-width: 780px) {
-  .container {
-    margin-left: 128px;
-    margin-right: 128px;
-  }
+.container {
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
 }
 
 .type-effect::after {
@@ -80,18 +84,35 @@ p + p {
 }
 
 @keyframes type-effect {
-  to { visibility: hidden }
+  to {
+    visibility: hidden;
+  }
 }
 
-.blog-layout p + p {
-  margin-top: 16px;
+header {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 4rem;
 }
 
-.blog-layout__title {
-  margin-bottom: 0;
+footer {
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+  margin-top: 4rem;
+  font-size: 0.825rem;
+  color: rgb(58, 58, 58);
 }
 
-.blog-layout__subtitle {
-  font-weight: 600;
-  margin-bottom: 48px;
+footer p + p {
+  margin-top: 1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.highlight {
+  background-color: #faff47;
 }

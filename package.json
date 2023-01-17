@@ -17,6 +17,7 @@
   "dependencies": {},
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-img": "^2.0.1",
     "cross-env": "^7.0.2",
     "cssnano": "^4.1.10",
     "html-minifier": "^4.0.0",
