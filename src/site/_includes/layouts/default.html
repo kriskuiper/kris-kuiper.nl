@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    {% include("components/meta.html") %}
+    <title>{{ metaTitle }}</title>
     {% if not runtimeConfig.isDevelopment %}
     <script
       async
@@ -28,8 +30,7 @@
       })(window, document, "script", "dataLayer", "GTM-MDF53GT");
     </script>
     <!-- End Google Tag Manager -->
-    {% endif %} {% include("components/meta.html") %}
-    <title>{{ metaTitle }}</title>
+    {% endif %}
   </head>
   <body class="{{ bodyClass or 'body' }}">
     <!-- Google Tag Manager (noscript) -->
