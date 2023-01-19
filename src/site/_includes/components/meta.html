@@ -1,6 +1,16 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>{{ metaTitle }}</title>
+{% for font in fonts %} {% if font.type === "woff2" %}
+<link
+  rel="preload"
+  href="{{ font.path }}"
+  as="font"
+  type="font/{{ font.type }}"
+  crossorigin
+/>
+{% endif %} {% endfor %} {% endif %}
+<link rel="stylesheet" href="/styles/index.css" />
 {% if not runtimeConfig.isDevelopment %}
 <script
   async
@@ -28,16 +38,6 @@
   })(window, document, "script", "dataLayer", "GTM-MDF53GT");
 </script>
 <!-- End Google Tag Manager -->
-{% for font in fonts %} {% if font.type === "woff2" %}
-<link
-  rel="preload"
-  href="{{ font.path }}"
-  as="font"
-  type="font/{{ font.type }}"
-  crossorigin
-/>
-{% endif %} {% endfor %} {% endif %}
-<link rel="stylesheet" href="/styles/index.css" />
 <meta name="title" content="Kris Kuiper, Front-end Developer" />
 <meta
   name="description"
