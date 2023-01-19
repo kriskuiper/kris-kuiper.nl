@@ -9,7 +9,7 @@
   type="font/{{ font.type }}"
   crossorigin
 />
-{% endif %} {% endfor %} {% endif %}
+{% endif %} {% endfor %}
 <link rel="stylesheet" href="/styles/index.css" />
 {% if not runtimeConfig.isDevelopment %}
 <script
@@ -38,6 +38,7 @@
   })(window, document, "script", "dataLayer", "GTM-MDF53GT");
 </script>
 <!-- End Google Tag Manager -->
+{% endif %}
 <meta name="title" content="Kris Kuiper, Front-end Developer" />
 <meta
   name="description"
