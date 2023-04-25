@@ -35,3 +35,8 @@ Some information about the folder structure
 ### Available commands
 
 Some table of available commands
+
+## Wishlist ✨
+
+- [ ] Don't hardcode everything
+- [ ] Use a headless CMS for the content
