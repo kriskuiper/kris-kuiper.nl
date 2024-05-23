@@ -1,11 +1,14 @@
 ---
-import { Image } from '@astrojs/image/components';
-import Layout from '../layouts/Layout.astro';
-import Logo from '../components/Logo.astro';
-import Card from '../components/Card.astro';
+import { Image } from "@astrojs/image/components";
+import Layout from "../layouts/Layout.astro";
+import Logo from "../components/Logo.astro";
+import Card from "../components/Card.astro";
 ---
 
-<Layout title="Kris Kuiper | Front-end Developer" description="Good at building stuff for the web. I help companies with building awesome stuff for real users">
+<Layout
+  title="Kris Kuiper | Front-end Developer"
+  description="Good at building stuff for the web. I help companies with building awesome stuff for real users"
+>
   <header class="h-12 md:h-24 flex items-center px-4 md:px-8">
     <nav class="container flex items-center justify-between mx-auto">
       <a href="/">
@@ -15,39 +18,74 @@ import Card from '../components/Card.astro';
 
       <ul class="flex -mr-4" aria-label="Links to contact me">
         <li>
-          <a href="https://www.linkedin.com/in/kris-kuiper-0b6897a2/" target="_blank" class="font-bold uppercase p-4">
+          <a
+            href="https://www.linkedin.com/in/kris-kuiper-0b6897a2/"
+            target="_blank"
+            class="font-bold uppercase p-4"
+          >
             LinkedIn
           </a>
         </li>
         <li>
-          <a href="mailto:kriskuiper74@gmail.com?subject=Let's work together" class="font-bold uppercase p-4">
+          <a
+            href="mailto:kriskuiper74@gmail.com?subject=Let's work together"
+            class="font-bold uppercase p-4"
+          >
             Contact
           </a>
         </li>
       </ul>
     </nav>
   </header>
-	<main>
+  <main>
     <section class="grid place-items-center mx-12 min-h-screen">
       <div class="text-center">
-        <p class="font-bold uppercase bg-gray-200 rounded-lg px-4 py-2 mb-3 text-sm inline-block">Hey there! 👋🏻</p>
+        <p
+          class="font-bold uppercase bg-gray-200 rounded-lg px-4 py-2 mb-3 text-sm inline-block"
+        >
+          Hey there! 👋🏻
+        </p>
         <h1 class="font-black text-5xl mb-8 md:text-9xl">Kris Kuiper</h1>
         <div class="md:text-xl">
-          <p class="mb-2">Dutch Front-end Developer, good at building stuff for the web</p>
-          <p class="mb-10">Crafting awesome digital experiences for real users</p>
+          <p class="mb-2">
+            Dutch Front-end Developer, good at building stuff for the web
+          </p>
+          <p class="mb-10">
+            Crafting awesome digital experiences for real users
+          </p>
         </div>
-        <a href="https://www.linkedin.com/in/kris-kuiper-0b6897a2/" class="rounded-sm text-xl px-8 py-2 md:px-16 md:py-4 hover:rounded-[50px] hover:text-white hover:bg-blue-600 hover:border-blue-600 delay-200 transition-all border border-black text-center lowercase font-bold">Send me a message</a>
+        <div class="flex flex-col items-center gap-4">
+          <a
+            href="https://www.linkedin.com/in/kris-kuiper-0b6897a2/"
+            class="rounded-sm text-xl px-8 py-2 md:px-16 md:py-4 hover:rounded-[50px] hover:text-white hover:bg-blue-600 hover:border-blue-600 delay-200 transition-all border border-black text-center lowercase font-bold block max-w-fit"
+          >
+            Send me a message
+          </a>
+
+          <a href="#about-me" class="font-bold text-xs">
+            Nah, I want to read more
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="min-h-screen bg-black text-white py-24 px-4">
-      <div class="flex flex-col gap-8 lg:flex-row-reverse lg:justify-center mb-8 lg:mb-24 lg:-translate-x-[100px]">
+    <section class="min-h-screen bg-black text-white py-24 px-4" id="about-me">
+      <div
+        class="flex flex-col gap-8 lg:flex-row-reverse lg:justify-center mb-8 lg:mb-24 lg:-translate-x-[100px]"
+      >
         <div class="text-center">
           <h2 class="text-5xl font-black mb-1 md:text-9xl">About me</h2>
           <p class="md:text-xl">and how I can help you</p>
         </div>
         <figure class="flex justify-center">
-          <Image src="/images/me.jpg" width={393} height={589} alt="A picture of me looking at you" format="avif" class="object-center object-cover rounded-full w-[200px] h-[200px]" />
+          <Image
+            src="/images/me.jpg"
+            width={393}
+            height={589}
+            alt="A picture of me looking at you"
+            format="avif"
+            class="object-center object-cover rounded-full w-[200px] h-[200px]"
+          />
         </figure>
       </div>
       <ul class="grid gap-4 md:grid-cols-2 max-w-5xl mx-auto">
@@ -68,7 +106,7 @@ import Card from '../components/Card.astro';
         />
         <Card
           title="Cyclist 🚴🏻"
-          body="I like to do some cycling in my free time. In April 2023 I cycled the 150km of the Amstel Gold Race tour version."
+          body="I like to do some cycling in my free time. In April 2023 & 2024 I cycled the 150km of the Amstel Gold Race tour version."
           dark
         />
       </ul>
@@ -82,11 +120,11 @@ import Card from '../components/Card.astro';
       <ul class="grid gap-4 md:grid-cols-2 max-w-5xl mx-auto">
         <Card
           title="HTML, CSS & JS"
-          body="I master the basics of the web inside-out as I think this is an important skill for every front-end developer."
+          body="I master the arts of the web inside-out as I think this is an important skill for every front-end developer. I care a lot about the accessibility of your site."
         />
         <Card
           title="JavaScript frameworks"
-          body="Vue, React, Svelte, you name it. I’ve touched most of the mainstream JavaScript frameworks. Also ones like NextJS and NuxtJS."
+          body="Vue, React, Svelte, you name it. I’ve touched most of the mainstream JavaScript (meta)frameworks. I extensively worked with Nuxt and NextJS."
         />
         <Card
           title="Testing and code quality"
@@ -94,7 +132,7 @@ import Card from '../components/Card.astro';
         />
         <Card
           title="Component libraries"
-          body="I’ve created multiple component libraries together with designers. All of them are built with Storybook."
+          body="I’ve created multiple component libraries together with designers. Most of them are built using Storybook but I can also reach for a more pragmatic solution."
         />
       </ul>
     </section>
@@ -103,19 +141,41 @@ import Card from '../components/Card.astro';
       <div class="text-center mb-8">
         <h2 class="text-5xl font-black mb-2 md:text-9xl">Works</h2>
         <p class="mb-8">every time</p>
-        <a href="/files/cv-kris.pdf" download class="underline">Download my resumé (Dutch)</a>
+        <a href="/files/cv-kris.pdf" download class="underline"
+          >Download my resumé (Dutch)</a
+        >
       </div>
       <p class="text-left mb-8 lg:mb-24 text-gray-500 max-w-lg mx-auto">
-        I am excited to work on awesome projects. That project could be yours or your clients'. In the meantime here are some cases I worked on as an employee for various companies:
+        I am always excited to work on awesome projects. That project could be
+        yours or your clients'. In the meantime here are some cases I worked on
+        as an employee for various companies:
       </p>
-      <ul aria-label="Work from the past" class="grid gap-4 md:grid-cols-2 max-w-5xl mx-auto">
-        <Card title="LOAVIES - Headless shops 👚" body="For this awesome clothing company I built the new headless webshop in NuxtJS together with my colleagues. I also created a component library and fixed many of the E2E tests." dark />
-        <Card title="Mooore - Tech leading 👨🏼‍🏫" body="As a front-end developer at Mooore I work as a tech lead for multiple projects and help them in their transition to building more headless shops." dark />
+      <ul
+        aria-label="Work from the past and present"
+        class="grid gap-4 md:grid-cols-2 max-w-5xl mx-auto"
+      >
+        <Card
+          title="Zonneplan - Development 👨‍💻"
+          body="As a front-end developer at Zonneplan I currently work on various projects with React, NextJS and a little bit of PHP sometimes."
+          dark
+        />
+        <Card
+          title="Mooore - Tech leading 👨🏼‍🏫"
+          body="As a front-end developer at Mooore I worked as a front-end tech lead for multiple projects and help them in their transition to building more headless shops with Nuxt and NextJS."
+          dark
+        />
+        <Card
+          title="LOAVIES - Headless shops 👚"
+          body="For this awesome clothing company I built the new headless webshop in Nuxt together with my colleagues. I also created a component library and fixed many of the E2E tests."
+          dark
+        />
       </ul>
     </section>
 
     <footer class="text-gray-700 p-4 text-sm text-center">
-      <p class="mb-4">Let's make the web a bit faster and easier to use every day together. ❤️</p>
+      <p class="mb-4">
+        Let's make the web a bit faster and easier to use every day together. ❤️
+      </p>
       <p>Registered at the Dutch Chamber of Commerce under number 89849426.</p>
     </footer>
   </main>
